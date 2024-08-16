@@ -12,7 +12,7 @@ function Card({src , title , price , description , category}){
                     <p className="mt-2 text-gray-700">{description}</p>
                 </div>
                 <div className="mt-4 flex justify-between items-center">
-                    <span className="text-lg font-bold text-green-600">{inr}</span>
+                    <span className="text-lg font-bold text-green-600"><i class="fa-solid fa-indian-rupee-sign"></i> {inr}</span>
                     <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Add to Cart</button>
                 </div>                                                                                                                                                                  
             </div>
