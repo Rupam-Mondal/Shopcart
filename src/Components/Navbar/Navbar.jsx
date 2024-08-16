@@ -1,4 +1,7 @@
+import useStore from "../../context/context.js"
+
 function Navbar(){
+    const {count , inc} = useStore()
     return (
         <>
             <div className="bg-gray-800 w-screen h-[65px] box-border flex items-center px-10 justify-between text-white">
@@ -15,7 +18,8 @@ function Navbar(){
                 </div>
 
                 <div className="h-[50px] w-24 flex">
-                    <div className="flex justify-center items-center w-1/2 h-full box-border cursor-pointer hover:bg-gray-600 rounded-full transition-colors duration-250 delay-75">
+                    <div className="flex justify-center items-center w-1/2 h-full box-border cursor-pointer hover:bg-gray-600 rounded-full transition-colors duration-250 delay-75 relative">
+                        <div className="absolute top-0 right-1">{count}</div>
                         <i className="fa-solid fa-cart-shopping"></i>
                     </div>
                     <div className="flex justify-center items-center w-1/2 h-full box-border cursor-pointer hover:bg-gray-600 rounded-full transition-colors duration-250 delay-75">
