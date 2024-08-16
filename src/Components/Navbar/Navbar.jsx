@@ -16,10 +16,10 @@ function Navbar(){
 
                 <div className="h-[50px] w-24 flex">
                     <div className="flex justify-center items-center w-1/2 h-full box-border cursor-pointer hover:bg-gray-600 rounded-full transition-colors duration-250 delay-75">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i className="fa-solid fa-cart-shopping"></i>
                     </div>
                     <div className="flex justify-center items-center w-1/2 h-full box-border cursor-pointer hover:bg-gray-600 rounded-full transition-colors duration-250 delay-75">
-                        <i class="fa-regular fa-user"></i>
+                        <i className="fa-regular fa-user"></i>
                     </div>
                 </div>
             </div>
